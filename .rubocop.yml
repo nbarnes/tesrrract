@@ -1,0 +1,29 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - 'db/schema.rb'
+    - 'config/application.rb'
+    - 'bin/rails'
+    - 'bin/rake'
+    - 'bin/spring'
+    - 'config/initializers/assets.rb'
+    - 'bin/setup'
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyLinesAroundClassBody:
+  Enabled: false
+
+Style/IndentationConsistency:
+  EnforcedStyle: rails
+
+Style/EmptyLinesAroundAccessModifier:
+  Enabled: false
+
+Style/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Style/RedundantReturn:
+  Enabled: false
